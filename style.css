@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Raleway:wght@600&display=swap");
+body {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  height: 500px;
+  width: 100%;
+}
+
+.summary {
+  font-size: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  height: 150px;
+}
+
+.preamble,
+.supporting {
+  position: relative;
+  text-align: justify;
+  width: 370px;
+  top: 302px;
+  left: 150px;
+}
+
+* html .preamble {
+  top: 302px;
+}
+
+footer {
+  text-align: center;
+  height: 100px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 251px;
+  width: 210px;
+  right: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
