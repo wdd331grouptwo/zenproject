@@ -45,35 +45,4 @@ footer {
   grid-row: 2/6;
 }
 
-#zen-intro {
-  grid-column-start: 1;
-  grid-column-end: 9;
-  justify-self: center;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  padding: 20px;
-}
-
-h2 {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
-.summary p {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  justify-items: center;
-}
-
 /*# sourceMappingURL=style.css.map */
