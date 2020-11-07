@@ -48,11 +48,6 @@ footer {
 }
 
 @media only screen and (min-width: 900px) {
-  .page-wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-
   .sidebar {
     position: absolute;
     top: 300px;
