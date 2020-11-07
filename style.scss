@@ -37,10 +37,33 @@ h1, h2, h3 {
 .preamble, 
 .supporting {
     position: relative;
-    text-align: justify;
     width: 370px;
     top: 300px;
     margin: 0 auto;
+}
+
+.preamble {
+    left: 0;
+}
+
+.explanation {
+    position: relative;
+    left: 10%;
+}
+
+.participation {
+    position: relative;
+    left: 0;
+}
+
+.benefits {
+    position: relative;
+    left: 10%;
+}
+
+.requirements {
+    position: relative;
+    left: 0;
 }
 
 footer {
@@ -56,6 +79,52 @@ footer {
 }
 
 @media only screen and (min-width: 950px) {
+    .preamble, 
+    .supporting {
+        margin: 0 auto;
+        position: absolute;
+        width: 470px;
+        top: 300px;
+    }
+
+    .preamble {
+        left: 200px;
+    }
+
+    .explanation {
+        position: absolute;
+        width: 470px;
+        left: 40px;
+        top: 400px;
+    }
+
+    .participation {
+        position: absolute;
+        width: 470px;
+        top: 800px;
+        left: 150px;
+    }
+
+    .benefits {
+        position: absolute;
+        width: 470px;
+        left: 450px;
+        top: 1300px;
+    }
+
+    .requirements {
+        position: absolute;
+        width: 470px;
+        left: 275px;
+        top: 1600px;
+    }
+
+    footer {
+        top: 2350px;
+        padding: 20px;  
+        left: 45%;
+    }
+
     .sidebar {
         position: absolute;
         top: 300px;
