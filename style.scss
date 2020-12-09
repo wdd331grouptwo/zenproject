@@ -30,11 +30,11 @@ h1, h2, h3 {
     position: absolute;
     text-align: center;
     top: 200px;
-    height: 150px; 
+    height: 150px;
     width: 95%;
 }
 
-.preamble, 
+.preamble,
 .supporting {
     position: relative;
     width: 370px;
@@ -79,7 +79,7 @@ footer {
 }
 
 @media only screen and (min-width: 950px) {
-    .preamble, 
+    .preamble,
     .supporting {
         margin: 0 auto;
         position: absolute;
@@ -121,7 +121,7 @@ footer {
 
     footer {
         top: 2350px;
-        padding: 20px;  
+        padding: 20px;
         left: 45%;
     }
 
