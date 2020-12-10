@@ -1,3 +1,7 @@
+//Paintbrush image found at Pixabay. No attribution required, but attributtion is Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=155536">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=155536">Pixabay</a>
+
+//Large View
+
 header {
   position: absolute;
   top: 0;
@@ -61,6 +65,8 @@ h3 {
 .summary a:hover {
   color: $color-5;
 }
+
+//Small view
 
 @media only screen and (min-width: 950px) {
 
