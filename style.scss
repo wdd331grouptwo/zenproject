@@ -3,12 +3,11 @@
 
 @import "partials/variables";
 
-
-
 body {
     font-family: $body-font;
     font-size: $body-font-size;
     margin: 0;
+    background: $body-color;
 }
 
 header {
@@ -110,9 +109,71 @@ footer {
 }
 
 .sidebar {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("images/easel.png");
+    background-size: cover;
+    overflow: hidden;
     position: relative;
     text-align: center;
     top: 300px;
+    left: -80px;
+    width: 900px;
+    height: 700px;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: -40px;
+    transition: margin-left 2s;
+
+    h3 {
+        font-size: 38px;
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: $color-2;
+
+        &:hover {
+            color: $color-5;
+        }
+    }
+}
+
+.design-selection {
+    top: 25%;
+    left: -30%;
+    position: relative;
+    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(6deg) skewX(-2deg) skewY(-2deg);
+    margin-bottom: 1rem;
+}
+
+.design-archives {
+    top: 25%;
+    left: -40%;
+    position: relative;
+    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(8deg) skewX(-2deg) skewY(-2deg);
+    margin-bottom: 1rem;
+}
+
+.zen-resources {
+    top: 25%;
+    left: -50%;
+    position: relative;
+    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(10deg) skewX(-2deg);
+}
+
+//adding transition for small screen to medium screen in small viewport for easel
+@media only screen and (min-width: 500px) {
+    .sidebar {
+        margin-left: 10rem;
+        transition: margin-left 2s;
+    }
 }
 
 @media only screen and (min-width: 950px) {
@@ -191,13 +252,59 @@ footer {
     }
 
     .sidebar {
-        position: absolute;
-        top: 300px;
-        right: 50px;
-        width: 250px;
-    }
+        display: flex;
+        position: relative;
+        float: right;
+        width: 500px;
+        left: 0;
+        right: 0;
+        height: 1200px;
+        transition: width 2s;
 
-    .design-selection {
-        margin-top: 120px;
+        .design-selection, 
+        .design-archives, 
+        .zen-resources {
+            top: 14%;
+        }
+
+        .design-selection {
+            left: 38%;
+            transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(4deg) skewX(-2deg) skewY(-2deg);
+            transition: left 2s;
+        }
+
+        .design-archives {
+            left: 29%;
+            transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(6deg) skewX(-2deg) skewY(-2deg);
+            transition: left 2s;
+        }
+
+        .zen-resources {
+            left: 22%;
+            transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(8deg) skewX(-2deg);
+            transition: left 2s;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .sidebar {
+        width: 620px;
+        transition: width 2s;
+
+        .design-selection {
+            left: 25%;
+            transition: left 2s;
+        }
+
+        .design-archives {
+            left: 16%;
+            transition: left 2s;
+        }
+
+        .zen-resources {
+            left: 9%;
+            transition: left 2s;
+        }
     }
 }
