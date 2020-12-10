@@ -1,0 +1,35 @@
+footer {
+  background-color: $color-1;
+  position: relative;
+}
+
+footer a {
+  padding: 30px;
+}
+
+@media only screen and (min-width: 950px) {
+
+footer {
+   top: 2350px;
+   padding: 20px;
+   height: 80px;
+   text-align: center;
+   position: relative;
+   width: 100vw;
+
+}
+
+footer a {
+  height: 70px;
+  font-family: $body-font;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 40px;
+}
+
+footer a:hover {
+  color: $color-3;
+  text-decoration: underline;
+}
+}

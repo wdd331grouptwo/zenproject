@@ -86,6 +86,39 @@ h3 {
     margin-right: 0;
   }
 }
+footer {
+  background-color: #f4108c;
+  position: relative;
+}
+
+footer a {
+  padding: 30px;
+}
+
+@media only screen and (min-width: 950px) {
+  footer {
+    top: 2350px;
+    padding: 20px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    width: 100vw;
+  }
+
+  footer a {
+    height: 70px;
+    font-family: Raleway, sans-serif;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 40px;
+  }
+
+  footer a:hover {
+    color: #00bfb2;
+    text-decoration: underline;
+  }
+}
 body {
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -123,12 +156,6 @@ body {
 .requirements {
   position: relative;
   left: 0;
-}
-
-footer {
-  text-align: center;
-  position: relative;
-  width: 100%;
 }
 
 .sidebar {
@@ -232,12 +259,6 @@ footer {
     width: 470px;
     left: 275px;
     top: 1600px;
-  }
-
-  footer {
-    top: 2350px;
-    padding: 20px;
-    left: 45%;
   }
 
   .sidebar {

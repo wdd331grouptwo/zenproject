@@ -3,6 +3,7 @@
 
 @import "partials/variables";
 @import "partials/header";
+@import "partials/footer";
 
 body {
     font-family: $body-font;
@@ -41,12 +42,6 @@ body {
 .requirements {
     position: relative;
     left: 0;
-}
-
-footer {
-    text-align: center;
-    position: relative;
-    width: 100%;
 }
 
 .sidebar {
@@ -157,12 +152,6 @@ footer {
         width: 470px;
         left: 275px;
         top: 1600px;
-    }
-
-    footer {
-        top: 2350px;
-        padding: 20px;
-        left: 45%;
     }
 
     .sidebar {
