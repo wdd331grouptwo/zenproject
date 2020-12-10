@@ -87,7 +87,7 @@ h3 {
   }
 }
 footer {
-  background-color: #f4108c;
+  background-color: #028090;
   position: relative;
 }
 
@@ -98,8 +98,8 @@ footer a {
 @media only screen and (min-width: 950px) {
   footer {
     top: 2350px;
-    padding: 20px;
-    height: 80px;
+    padding-top: 50px;
+    height: 70px;
     text-align: center;
     position: relative;
     width: 100vw;
@@ -108,15 +108,18 @@ footer a {
   footer a {
     height: 70px;
     font-family: Raleway, sans-serif;
-    color: white;
+    color: #f4108c;
     font-size: 1.2em;
     text-decoration: none;
-    padding: 40px;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    border-radius: 5px;
   }
 
   footer a:hover {
-    color: #00bfb2;
-    text-decoration: underline;
+    color: #ffffff;
+    background-color: #f4108c;
   }
 }
 body {
