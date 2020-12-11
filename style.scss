@@ -1,256 +1,374 @@
-// Importing fonts
-@import url('https://fonts.googleapis.com/css2?family=Montez&family=Raleway:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Raleway:wght@600&display=swap");
+header {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  height: 300px;
+  width: 100%;
+}
 
-@import "partials/variables";
-@import "partials/header";
-@import "partials/footer";
+h1 {
+  color: #f4108c;
+  font-family: Montez, cursive;
+  font-size: 3.5em;
+  background-image: url("images/paintbrush.png");
+  height: 100%;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
 
+h2 {
+  font-family: Raleway, sans-serif;
+  color: #028090;
+  font-weight: bold;
+  font-size: 1.7em;
+  position: relative;
+  top: -73%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+h2 abbr {
+  font-family: Montez, cursive;
+}
+
+h3 {
+  font-family: Montez, cursive;
+  font-size: 40px;
+}
+
+.summary {
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+  top: 200px;
+  height: 150px;
+  width: 95%;
+}
+
+.summary p {
+  font-size: 0.9em;
+  font-family: Raleway, sans-serif;
+  color: #103942;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.summary a {
+  color: #f4108c;
+}
+
+.summary a:hover {
+  color: #028090;
+}
+
+@media only screen and (min-width: 950px) {
+  h1 {
+    font-size: 5.5em;
+    background-size: 900px;
+    background-position: center;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    top: -57%;
+  }
+
+  .summary {
+    margin-top: 40px;
+    top: 290px;
+  }
+
+  .summary p {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+footer {
+  background-color: #028090;
+  position: relative;
+  height: 40px;
+  padding-top: 17px;
+  font-size: 1em;
+}
+
+footer a {
+  height: 20px;
+  font-family: Raleway, sans-serif;
+  color: #f4108c;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 4px;
+  background-color: #ffffff;
+  margin-left: 21px;
+  border-radius: 5px;
+}
+
+footer a:hover {
+  color: #ffffff;
+  background-color: #f4108c;
+}
+
+@media only screen and (min-width: 950px) {
+  footer {
+    top: 2350px;
+    padding-top: 50px;
+    height: 70px;
+    text-align: center;
+    position: relative;
+    width: 100vw;
+  }
+
+  footer a {
+    height: 30px;
+    font-family: Raleway, sans-serif;
+    color: #f4108c;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
+
+  footer a:hover {
+    color: #ffffff;
+    background-color: #f4108c;
+  }
+}
 body {
-    font-family: $body-font;
-    font-size: $body-font-size;
-    margin: 0;
-    background: $body-color;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background: #faf9f2;
 }
 
 .preamble,
 .supporting {
-    position: relative;
-    width: 370px;
-    top: 300px;
-    margin: 0 auto;
+  position: relative;
+  width: 370px;
+  top: 300px;
+  margin: 0 auto;
 }
 
 .preamble {
-    left: 0;
-    background-image: url("/images/img_0082.png");
-    background-size: 350px 350px;
-    height: 100%;
-    background-repeat: no-repeat;
-
-
+  left: 0;
+  background-image: url("/images/img_0082.png");
+  background-size: 350px 350px;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
 .explanation {
-    position: relative;
-    left: 50%;
-    margin-top: 50px;
-    height: auto;
-    background-image: url("/images/img_0082.png");
-    background-size: 350px;
-    background-repeat: no-repeat;
-    overflow: hidden;
+  position: relative;
+  left: 50%;
+  margin-top: 50px;
+  height: auto;
+  background-image: url("/images/img_0082.png");
+  background-size: 350px;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .participation {
-    //position: relative;
-    margin-top: 50px;
-    height: auto;
-    background-image: url("/images/img_0082.png");
-    background-size: 550px 350px;
-    background-repeat: no-repeat;
-    overflow: hidden;
+  margin-top: 50px;
+  height: auto;
+  background-image: url("/images/img_0082.png");
+  background-size: 550px 350px;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .participation a {
-    color: $color-1;
+  color: #f4108c;
 }
 
 .benefits {
-    position: relative;
-    left: 20%;
-    margin-top: 50px;
-    height: 300px;
-    background-image: url("/images/img_0082.png");
-    background-size: 400px 300px;
-    background-repeat: no-repeat;
-
-
+  position: relative;
+  left: 20%;
+  margin-top: 50px;
+  height: 300px;
+  background-image: url("/images/img_0082.png");
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
 }
 
 .requirements {
-    position: relative;
-    left: 10px;
-    margin-top: 50px;
-
-    background-image: url("/images/img_0082.png");
-    background-size: 400px 700px;
-    background-repeat: no-repeat;
-
+  position: relative;
+  left: 10px;
+  margin-top: 50px;
+  background-image: url("/images/img_0082.png");
+  background-size: 400px 700px;
+  background-repeat: no-repeat;
 }
 
 .requirements a {
-    color: $color-1;
+  color: #f4108c;
 }
 
 .sidebar {
-    display: flex;
-    justify-content: space-around;
-    background-image: url("images/easel.png");
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    top: 300px;
-    left: -80px;
-    width: 900px;
-    height: 700px;
-    font-size: 14px;
-    margin-top: 40px;
-    margin-left: -40px;
-    transition: margin-left 2s;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("images/easel.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  top: 300px;
+  left: -80px;
+  width: 900px;
+  height: 700px;
+  font-size: 14px;
+  margin-top: 40px;
+  margin-left: -40px;
+  transition: margin-left 2s;
+}
 
-    h3 {
-        font-size: 38px;
-        margin: 0;
-    }
+.sidebar h3 {
+  font-size: 38px;
+  margin: 0;
+}
 
-    ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 
-    ul li a {
-        text-decoration: none;
-        color: $color-2;
+.sidebar ul li a {
+  text-decoration: none;
+  color: #a50e68;
+}
 
-        &:hover {
-            color: $color-5;
-        }
-    }
+.sidebar ul li a:hover {
+  color: #028090;
 }
 
 .design-selection {
-    top: 25%;
-    left: -30%;
-    position: relative;
-    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(6deg) skewX(-2deg) skewY(-2deg);
-    margin-bottom: 1rem;
+  top: 25%;
+  left: -30%;
+  position: relative;
+  transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(6deg) skewX(-2deg) skewY(-2deg);
+  margin-bottom: 1rem;
 }
 
 .design-archives {
-    top: 25%;
-    left: -40%;
-    position: relative;
-    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(8deg) skewX(-2deg) skewY(-2deg);
-    margin-bottom: 1rem;
+  top: 25%;
+  left: -40%;
+  position: relative;
+  transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(8deg) skewX(-2deg) skewY(-2deg);
+  margin-bottom: 1rem;
 }
 
 .zen-resources {
-    top: 25%;
-    left: -50%;
-    position: relative;
-    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(10deg) skewX(-2deg);
+  top: 25%;
+  left: -50%;
+  position: relative;
+  transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(10deg) skewX(-2deg);
 }
 
-
-
-//adding transition for small screen to medium screen in small viewport for easel
-@media only screen and (min-width: 500px) {
-    .sidebar {
-        margin-left: 10rem;
-        transition: margin-left 2s;
-    }
+@media only screen and (min-width: 600px) {
+  .sidebar {
+    margin-left: 10rem;
+    transition: margin-left 2s;
+  }
 }
-
 @media only screen and (min-width: 950px) {
+  .preamble,
+.supporting {
+    margin-top: 100px;
+    position: absolute;
+    width: 470px;
+    top: 300px;
+  }
 
-    .preamble,
-    .supporting {
-        margin-top: 100px;
-        position: absolute;
-        width: 470px;
-        top: 300px;
-    }
+  .preamble {
+    left: 200px;
+  }
 
-    .preamble {
-        left: 200px;
+  .explanation {
+    position: absolute;
+    width: 470px;
+    left: 40px;
+    top: 400px;
+  }
 
-    }
+  .participation {
+    position: absolute;
+    width: 470px;
+    top: 800px;
+    left: 150px;
+  }
 
-    .explanation {
-        position: absolute;
-        width: 470px;
-        left: 40px;
-        top: 400px;
+  .benefits {
+    position: absolute;
+    width: 470px;
+    left: 450px;
+    top: 1300px;
+  }
 
-    }
+  .requirements {
+    position: absolute;
+    width: 470px;
+    left: 275px;
+    top: 1600px;
+  }
 
-    .participation {
-        position: absolute;
-        width: 470px;
-        top: 800px;
-        left: 150px;
-    }
+  .sidebar {
+    display: flex;
+    position: relative;
+    float: right;
+    width: 500px;
+    left: 0;
+    right: 0;
+    height: 1200px;
+    transition: width 2s;
+    top: 350px;
+  }
 
-    .benefits {
-        position: absolute;
-        width: 470px;
-        left: 450px;
-        top: 1300px;
-    }
+  .sidebar .design-selection,
+.sidebar .design-archives,
+.sidebar .zen-resources {
+    top: 14%;
+  }
 
-    .requirements {
-        position: absolute;
-        width: 470px;
-        left: 275px;
-        top: 1600px;
-    }
+  .sidebar .design-selection {
+    left: 38%;
+    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(4deg) skewX(-2deg) skewY(-2deg);
+    transition: left 2s;
+  }
 
-    .sidebar {
-        display: flex;
-        position: relative;
-        float: right;
-        width: 500px;
-        left: 0;
-        right: 0;
-        height: 1200px;
-        transition: width 2s;
-        top: 350px;
+  .sidebar .design-archives {
+    left: 29%;
+    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(6deg) skewX(-2deg) skewY(-2deg);
+    transition: left 2s;
+  }
 
-        .design-selection,
-        .design-archives,
-        .zen-resources {
-            top: 14%;
-        }
-
-        .design-selection {
-            left: 38%;
-            transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(4deg) skewX(-2deg) skewY(-2deg);
-            transition: left 2s;
-        }
-
-        .design-archives {
-            left: 29%;
-            transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(6deg) skewX(-2deg) skewY(-2deg);
-            transition: left 2s;
-        }
-
-        .zen-resources {
-            left: 22%;
-            transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(8deg) skewX(-2deg);
-            transition: left 2s;
-        }
-    }
+  .sidebar .zen-resources {
+    left: 22%;
+    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(8deg) skewX(-2deg);
+    transition: left 2s;
+  }
 }
-
 @media only screen and (min-width: 1200px) {
-    .sidebar {
-        width: 620px;
-        transition: width 2s;
+  .sidebar {
+    width: 620px;
+    transition: width 2s;
+  }
 
-        .design-selection {
-            left: 25%;
-            transition: left 2s;
-        }
+  .sidebar .design-selection {
+    left: 25%;
+    transition: left 2s;
+  }
 
-        .design-archives {
-            left: 16%;
-            transition: left 2s;
-        }
+  .sidebar .design-archives {
+    left: 16%;
+    transition: left 2s;
+  }
 
-        .zen-resources {
-            left: 9%;
-            transition: left 2s;
-        }
-    }
+  .sidebar .zen-resources {
+    left: 9%;
+    transition: left 2s;
+  }
 }
