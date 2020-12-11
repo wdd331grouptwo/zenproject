@@ -1,0 +1,53 @@
+footer {
+  background-color: $color-5;
+  position: relative;
+  height: 40px;
+  padding-top: 17px;
+  font-size: 1em;
+}
+
+footer a {
+  height: 20px;
+  font-family: $body-font;
+  color: $color-1;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 4px;
+  background-color: $color-6;
+  margin-left: 21px;
+  border-radius: 5px;
+}
+
+footer a:hover {
+  color: $color-6;
+  background-color: $color-1;
+}
+
+@media only screen and (min-width: 950px) {
+
+footer {
+   top: 2350px;
+   padding-top: 50px;
+   height: 70px;
+   text-align: center;
+   position: relative;
+   width: 100vw;
+}
+
+footer a {
+  height: 30px;
+  font-family: $body-font;
+  color: $color-1;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 8px;
+  background-color: $color-6;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+footer a:hover {
+  color: $color-6;
+  background-color: $color-1;
+}
+}
