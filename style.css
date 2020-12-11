@@ -330,25 +330,21 @@ body {
     transition: width 2s;
     top: 350px;
   }
-
   .sidebar .design-selection,
 .sidebar .design-archives,
 .sidebar .zen-resources {
     top: 14%;
   }
-
   .sidebar .design-selection {
     left: 38%;
     transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(4deg) skewX(-2deg) skewY(-2deg);
     transition: left 2s;
   }
-
   .sidebar .design-archives {
     left: 29%;
     transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(6deg) skewX(-2deg) skewY(-2deg);
     transition: left 2s;
   }
-
   .sidebar .zen-resources {
     left: 22%;
     transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(8deg) skewX(-2deg);
