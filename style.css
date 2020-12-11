@@ -89,8 +89,9 @@ h3 {
 footer {
   background-color: #028090;
   position: relative;
-  height: 60px;
-  padding-top: 35px;
+  height: 40px;
+  padding-top: 17px;
+  font-size: 1em;
 }
 
 footer a {
@@ -101,7 +102,7 @@ footer a {
   text-decoration: none;
   padding: 4px;
   background-color: #ffffff;
-  margin-left: 20px;
+  margin-left: 21px;
   border-radius: 5px;
 }
 
