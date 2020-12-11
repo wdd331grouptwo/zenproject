@@ -145,7 +145,7 @@ body {
 
 
 //adding transition for small screen to medium screen in small viewport for easel
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
     .sidebar {
         margin-left: 10rem;
         transition: margin-left 2s;
