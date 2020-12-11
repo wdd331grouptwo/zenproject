@@ -225,18 +225,22 @@ body {
   margin-left: -40px;
   transition: margin-left 2s;
 }
+
 .sidebar h3 {
   font-size: 38px;
   margin: 0;
 }
+
 .sidebar ul {
   list-style-type: none;
   padding-left: 0;
 }
+
 .sidebar ul li a {
   text-decoration: none;
   color: #a50e68;
 }
+
 .sidebar ul li a:hover {
   color: #028090;
 }
@@ -264,7 +268,7 @@ body {
   transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(10deg) skewX(-2deg);
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
   .sidebar {
     margin-left: 10rem;
     transition: margin-left 2s;
@@ -322,21 +326,25 @@ body {
     transition: width 2s;
     top: 350px;
   }
+
   .sidebar .design-selection,
 .sidebar .design-archives,
 .sidebar .zen-resources {
     top: 14%;
   }
+
   .sidebar .design-selection {
     left: 38%;
     transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(4deg) skewX(-2deg) skewY(-2deg);
     transition: left 2s;
   }
+
   .sidebar .design-archives {
     left: 29%;
     transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(6deg) skewX(-2deg) skewY(-2deg);
     transition: left 2s;
   }
+
   .sidebar .zen-resources {
     left: 22%;
     transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(8deg) skewX(-2deg);
@@ -348,14 +356,17 @@ body {
     width: 620px;
     transition: width 2s;
   }
+
   .sidebar .design-selection {
     left: 25%;
     transition: left 2s;
   }
+
   .sidebar .design-archives {
     left: 16%;
     transition: left 2s;
   }
+
   .sidebar .zen-resources {
     left: 9%;
     transition: left 2s;
