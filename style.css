@@ -89,10 +89,25 @@ h3 {
 footer {
   background-color: #028090;
   position: relative;
+  height: 60px;
+  padding-top: 35px;
 }
 
 footer a {
-  padding: 30px;
+  height: 20px;
+  font-family: Raleway, sans-serif;
+  color: #f4108c;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 4px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+footer a:hover {
+  color: #ffffff;
+  background-color: #f4108c;
 }
 
 @media only screen and (min-width: 950px) {
