@@ -21,26 +21,64 @@ body {
 
 .preamble {
     left: 0;
+    background-image: url("/images/img_0082.png");
+    background-size: 350px 350px;
+    height: 100%;
+    background-repeat: no-repeat;
+
+
 }
 
 .explanation {
     position: relative;
-    left: 10%;
+    left: 50%;
+    margin-top: 50px;
+    height: auto;
+    background-image: url("/images/img_0082.png");
+    background-size: 350px;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .participation {
-    position: relative;
-    left: 0;
+    //position: relative;
+    margin-top: 50px;
+    height: auto;
+    background-image: url("/images/img_0082.png");
+    background-size: 550px 350px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.participation a {
+    color: $color-1;
 }
 
 .benefits {
     position: relative;
-    left: 10%;
+    left: 20%;
+    margin-top: 50px;
+    height: 300px;
+    background-image: url("/images/img_0082.png");
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
+
+
 }
 
 .requirements {
     position: relative;
-    left: 0;
+    left: 10px;
+    margin-top: 50px;
+
+    background-image: url("/images/img_0082.png");
+    background-size: 400px 700px;
+    background-repeat: no-repeat;
+
+}
+
+.requirements a {
+    color: $color-1;
 }
 
 footer {
@@ -109,6 +147,8 @@ footer {
     transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(10deg) skewX(-2deg);
 }
 
+
+
 //adding transition for small screen to medium screen in small viewport for easel
 @media only screen and (min-width: 500px) {
     .sidebar {
@@ -129,6 +169,7 @@ footer {
 
     .preamble {
         left: 200px;
+
     }
 
     .explanation {
@@ -136,6 +177,7 @@ footer {
         width: 470px;
         left: 40px;
         top: 400px;
+
     }
 
     .participation {
