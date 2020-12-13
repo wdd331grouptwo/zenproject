@@ -61,7 +61,7 @@ h3 {
 }
 
 .summary a {
-  color: #f4108c;
+  color: #a50e68;
 }
 
 .summary a:hover {
@@ -268,7 +268,10 @@ body {
 }
 
 .participation a {
-  color: #f4108c;
+  color: #a50e68;
+}
+.participation a:hover {
+  color: #028090;
 }
 
 .benefits {
@@ -295,7 +298,10 @@ body {
 }
 
 .requirements a {
-  color: #f4108c;
+  color: #a50e68;
+}
+.requirements a:hover {
+  color: #028090;
 }
 
 /* Media Queries */
