@@ -1,0 +1,61 @@
+/* Paintbrush image found at Pixabay. No attribution required, but attributtion is Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2027292">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2027292">Pixabay</a> */
+
+.sidebar {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("images/easel.png");
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    top: 300px;
+    left: -130px;
+    width: 900px;
+    height: 700px;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: -40px;
+    transition: margin-left 2s;
+  }
+  
+  .sidebar h3 {
+    font-size: 38px;
+    margin: 0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color:$color-2;
+  }
+  
+  .sidebar ul li a:hover {
+    color: $color-5;
+  }
+  
+  .design-selection {
+    top: 25%;
+    left: -30%;
+    position: relative;
+    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(6deg) skewX(-2deg) skewY(-2deg);
+    margin-bottom: 1rem;
+  }
+  
+  .design-archives {
+    top: 25%;
+    left: -40%;
+    position: relative;
+    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(8deg) skewX(-2deg) skewY(-2deg);
+    margin-bottom: 1rem;
+  }
+  
+  .zen-resources {
+    top: 25%;
+    left: -50%;
+    position: relative;
+    transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(10deg) skewX(-2deg);
+  }

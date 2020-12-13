@@ -5,6 +5,7 @@ header {
   text-align: center;
   height: 300px;
   width: 100%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -13,7 +14,7 @@ h1 {
   font-size: 3.5em;
   background-image: url("images/paintbrush.png");
   height: 100%;
-  background-size: 450px;
+  background-size: 95%;
   background-repeat: no-repeat;
   background-position: 50% 30%;
 }
@@ -24,7 +25,7 @@ h2 {
   font-weight: bold;
   font-size: 1.7em;
   position: relative;
-  top: -73%;
+  top: -76%;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -45,6 +46,10 @@ h3 {
   top: 200px;
   height: 150px;
   width: 95%;
+  background-image: url("images/multi1.png");
+  background-size: 90% 120px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .summary p {
@@ -72,12 +77,16 @@ h3 {
 
   h2 {
     font-size: 2.5em;
-    top: -57%;
+    top: -58%;
   }
 
   .summary {
     margin-top: 40px;
     top: 290px;
+    background-size: 100% 150px;
+    padding-top: 20px;
+    width: 75%;
+    left: 12%;
   }
 
   .summary p {
@@ -138,78 +147,7 @@ footer a:hover {
     background-color: #f4108c;
   }
 }
-body {
-  font-family: Raleway, sans-serif;
-  font-size: 16px;
-  background: #faf9f2;
-  max-width: 100vw;
-}
-
-.preamble,
-.supporting {
-  position: relative;
-  width: 370px;
-  top: 300px;
-  margin: 0 auto;
-}
-
-.preamble {
-  left: 0;
-  background-image: url("/images/IMG_0089.png");
-  background-size: 300px 580px;
-  height: 100%;
-  background-repeat: no-repeat;
-  padding: 10px;
-  max-width: 80%;
-}
-
-.explanation {
-  position: relative;
-  margin-top: 50px;
-  height: auto;
-  background-image: url("/images/IMG_0090.png");
-  background-size: 350px 480px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.participation {
-  position: relative;
-  margin-top: 50px;
-  height: auto;
-  background-image: url("/images/IMG_0093.png");
-  background-size: 340px 550px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.participation a {
-  color: #f4108c;
-}
-
-.benefits {
-  position: relative;
-  left: 0;
-  margin-top: 50px;
-  height: 300px;
-  background-image: url("/images/img_0082.png");
-  background-size: 400px 300px;
-  background-repeat: no-repeat;
-}
-
-.requirements {
-  position: relative;
-  left: 10px;
-  margin-top: 50px;
-  background-image: url("/images/IMG_0093.png");
-  background-size: 400px 700px;
-  background-repeat: no-repeat;
-}
-
-.requirements a {
-  color: #f4108c;
-}
-
+/* Paintbrush image found at Pixabay. No attribution required, but attributtion is Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2027292">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2027292">Pixabay</a> */
 .sidebar {
   display: flex;
   justify-content: space-around;
@@ -219,7 +157,7 @@ body {
   position: relative;
   text-align: center;
   top: 300px;
-  left: -80px;
+  left: -130px;
   width: 900px;
   height: 700px;
   font-size: 14px;
@@ -270,53 +208,164 @@ body {
   transform: perspective(400px) rotateX(4deg) rotateY(-10deg) rotateZ(10deg) skewX(-2deg);
 }
 
+body {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  background: #faf9f2;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.preamble,
+.supporting {
+  position: relative;
+  width: 370px;
+  top: 280px;
+  margin: 0 auto;
+}
+.preamble h3,
+.supporting h3 {
+  padding-top: 2rem;
+  margin-bottom: 0;
+  text-align: center;
+  color: #a50e68;
+}
+
+.preamble {
+  left: 0;
+  background-image: url("/images/pink_paint.png");
+  background-size: 390px 500px;
+  height: 100%;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  transition: left 2s;
+}
+
+.explanation {
+  position: relative;
+  margin-top: 10px;
+  height: 100%;
+  background-image: url("/images/blue_paint.png");
+  background-size: 350px 480px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  transition: left 2s;
+}
+
+.participation {
+  position: relative;
+  margin-top: 20px;
+  height: auto;
+  background-image: url("/images/multi1.png");
+  background-size: 340px 650px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-bottom: 3.5rem;
+  transition: left 2s;
+}
+
+.participation a {
+  color: #f4108c;
+}
+
+.benefits {
+  position: relative;
+  left: 0;
+  margin-top: 20px;
+  height: 300px;
+  background-image: url("/images/teal_paint.png");
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  transition: left 2s;
+}
+
+.requirements {
+  position: relative;
+  left: 10px;
+  margin-top: 20px;
+  background-image: url("/images/multi2.png");
+  background-size: 350px 900px;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  transition: left 2s;
+}
+
+.requirements a {
+  color: #f4108c;
+}
+
+/* Media Queries */
 @media only screen and (min-width: 600px) {
   .sidebar {
     margin-left: 10rem;
     transition: margin-left 2s;
   }
+
+  h1 {
+    background-size: 70%;
+    margin-bottom: 4rem;
+  }
+
+  .summary {
+    margin-top: 2rem;
+    background-size: 100% 100px;
+  }
 }
 @media only screen and (min-width: 950px) {
   .preamble,
 .supporting {
-    margin-top: 100px;
+    margin-top: 200px;
     position: absolute;
     width: 470px;
     top: 300px;
   }
 
   .preamble {
-    left: 200px;
-    background-size: 350px 450px;
+    left: 130px;
+    background-size: 450px 450px;
+    transition: left 2s;
   }
 
   .explanation {
     position: absolute;
     width: 470px;
-    left: 25%;
-    top: 400px;
+    height: 400px;
+    left: 15%;
+    top: 370px;
     background-size: 350px 430px;
+    transition: left 2s;
   }
 
   .participation {
     position: absolute;
     width: 470px;
-    top: 800px;
-    left: 100%;
+    height: 600px;
+    top: 840px;
+    left: 30%;
+    background-size: 100% 90%;
+    transition: left 2s;
   }
 
   .benefits {
     position: absolute;
-    width: 470px;
-    left: 50%;
+    width: 420px;
+    left: 120%;
     top: 1300px;
+    background-size: 90%;
+    transition: left 2s;
   }
 
   .requirements {
     position: absolute;
-    width: 470px;
-    left: 160%;
+    width: 600px;
+    left: 50%;
     top: 1600px;
+    background-size: 100% 100%;
+    transition: left 2s;
   }
 
   .sidebar {
@@ -328,7 +377,7 @@ body {
     right: 0;
     height: 1200px;
     transition: width 2s;
-    top: 350px;
+    top: 400px;
   }
   .sidebar .design-selection,
 .sidebar .design-archives,
@@ -352,6 +401,38 @@ body {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .preamble {
+    left: 10%;
+    transition: left 2s;
+  }
+
+  .explanation {
+    left: 65%;
+    transition: left 2s;
+  }
+
+  .participation {
+    width: 550px;
+    left: 15%;
+    transition: left 2s;
+  }
+  .participation p {
+    padding-left: 3rem;
+  }
+
+  .benefits {
+    left: 170%;
+    top: 1050px;
+    transition: left 2s;
+  }
+
+  .requirements {
+    width: 1000px;
+    top: 1400px;
+    left: 50%;
+    transition: left 2s;
+  }
+
   .sidebar {
     width: 620px;
     transition: width 2s;
@@ -370,6 +451,10 @@ body {
   .sidebar .zen-resources {
     left: 9%;
     transition: left 2s;
+  }
+
+  footer {
+    top: 2000px;
   }
 }
 
